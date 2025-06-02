@@ -1,9 +1,10 @@
 <?php
 
+use App\Http\Controllers\ClipsController;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
-Route::get('/', [App\Http\Controllers\ClipsController::class, 'index']);
+ClipsController::routes();
